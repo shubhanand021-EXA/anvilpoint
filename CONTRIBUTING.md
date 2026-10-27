@@ -1,6 +1,6 @@
-# Contributing to FORGEKIT
+# Contributing to ANVILPOINT
 
-Thanks for your interest. FORGEKIT is MIT-licensed and built only with free, open-source tooling.
+Thanks for your interest. ANVILPOINT is MIT-licensed and built only with free, open-source tooling.
 
 ## Setup
 

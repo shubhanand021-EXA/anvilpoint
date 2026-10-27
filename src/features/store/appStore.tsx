@@ -4,9 +4,9 @@ import { DEFAULT_SETTINGS } from '../../types.js';
 import { analyzeInventory } from '../../core/analysis.js';
 import { importZipArchive, type ImportProgress } from '../../core/archive/zipImport.js';
 
-const SETTINGS_KEY = 'forgekit.settings.v1';
-const CHECKLIST_KEY = 'forgekit.checklist.v1';
-const HISTORY_KEY = 'forgekit.history.v1';
+const SETTINGS_KEY = 'anvilpoint.settings.v1';
+const CHECKLIST_KEY = 'anvilpoint.checklist.v1';
+const HISTORY_KEY = 'anvilpoint.history.v1';
 
 function loadSettings(): AppSettings {
   try {

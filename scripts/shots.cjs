@@ -8,7 +8,7 @@ const path = require('path');
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 1366, height: 864 } });
   page.on('console', (m) => { if (m.type() === 'error') console.log('[console.error]', m.text()); });
-  await page.goto('http://localhost:4174/', { waitUntil: 'networkidle' });
+  await page.goto('http://localhost:4175/', { waitUntil: 'networkidle' });
 
   await page.screenshot({ path: path.join(out, '01-empty.png') });
 

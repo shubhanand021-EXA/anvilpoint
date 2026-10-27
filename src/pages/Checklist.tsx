@@ -29,7 +29,7 @@ export function ChecklistPage() {
     const lines = [
       `# Release-readiness checklist — ${result?.inventory.projectName}`,
       '',
-      `> ${done}/${items.length} marked complete by user. “Verified” requires re-importing after the fix; FORGEKIT distinguishes user-marked from verified.`,
+      `> ${done}/${items.length} marked complete by user. “Verified” requires re-importing after the fix; ANVILPOINT distinguishes user-marked from verified.`,
       '',
       ...items.map((i) => `- [${(checklist[i.id] ?? 'todo') !== 'todo' ? 'x' : ' '}] **${i.id} ${i.title}** — ${i.remediation} (evidence: ${i.evidence.join('; ')})`),
     ];

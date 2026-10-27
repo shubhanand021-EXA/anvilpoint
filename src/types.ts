@@ -1,4 +1,4 @@
-/* FORGEKIT core data model. All repository analysis is local and evidence-backed. */
+/* ANVILPOINT core data model. All repository analysis is local and evidence-backed. */
 
 export type Ecosystem = 'node' | 'python' | 'rust' | 'go';
 
@@ -133,7 +133,7 @@ export const DEFAULT_LIMITS: ArchiveLimits = {
   maxTextFiles: 800,
 };
 
-export const RULE_SET_VERSION = 'forgekit-rules-1.0.0';
+export const RULE_SET_VERSION = 'ANVILPOINT-rules-1.0.0';
 
 export type PageId =
   | 'overview'

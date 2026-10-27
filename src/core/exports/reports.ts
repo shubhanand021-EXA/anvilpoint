@@ -9,7 +9,7 @@ export function reportAsJson(result: AnalysisResult): string {
   const { inventory, findings, dependencies, score, ruleSetVersion } = result;
   return JSON.stringify(
     {
-      tool: 'FORGEKIT',
+      tool: 'ANVILPOINT',
       ruleSetVersion,
       generatedAt: new Date().toISOString(),
       disclaimer: 'Heuristic file-presence analysis. Not a security certification, audit, or legal compliance statement.',
@@ -42,7 +42,7 @@ export function reportAsJson(result: AnalysisResult): string {
 export function reportAsMarkdown(result: AnalysisResult): string {
   const { inventory, findings, dependencies, score, ruleSetVersion } = result;
   const lines: string[] = [];
-  lines.push(`# FORGEKIT Analysis Report — ${inventory.projectName}`);
+  lines.push(`# ANVILPOINT Analysis Report — ${inventory.projectName}`);
   lines.push('');
   lines.push(`> Generated ${new Date().toISOString()} · Rules ${ruleSetVersion} · Heuristic analysis only — not a security certification or legal compliance statement.`);
   lines.push('');

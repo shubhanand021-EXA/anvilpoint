@@ -1,19 +1,19 @@
 <div align="center">
 
-# 🔨 FORGEKIT
+# 🔨 ANVILPOINT
 
 ### The Open-Source Project Readiness Workbench
 
 *Understand your repository. Discover maintenance gaps. Generate useful project files. Keep control of your code.*
 
-[![CI](https://github.com/shubhanand021-EXA/forgekit/actions/workflows/ci.yml/badge.svg)](https://github.com/shubhanand021-EXA/forgekit/actions/workflows/ci.yml)
+[![CI](https://github.com/shubhanand021-EXA/anvilpoint/actions/workflows/ci.yml/badge.svg)](https://github.com/shubhanand021-EXA/anvilpoint/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-amber.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](package.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Local-first](https://img.shields.io/badge/data-local--first-success.svg)](docs/PRIVACY.md)
 [![No telemetry](https://img.shields.io/badge/telemetry-none-critical.svg)](docs/PRIVACY.md)
 
-![FORGEKIT product tour](docs/assets/forgekit-tour.gif)
+![ANVILPOINT product tour](docs/assets/anvilpoint-tour.gif)
 
 **100% local-first · Zero paid dependencies · Zero telemetry · MIT licensed**
 
@@ -23,18 +23,18 @@
 
 ---
 
-## Why FORGEKIT?
+## Why ANVILPOINT?
 
-Every week, thousands of developers publish repositories missing a README, a license, tests, or CI — not from laziness, but because professional setup takes time and tooling. FORGEKIT compresses that work into minutes:
+Every week, thousands of developers publish repositories missing a README, a license, tests, or CI — not from laziness, but because professional setup takes time and tooling. ANVILPOINT compresses that work into minutes:
 
-| Before | With FORGEKIT |
+| Before | With ANVILPOINT |
 |---|---|
 | "Is this repo ready to publish?" 🤷 | A **47-point readiness score** with transparent methodology and per-category breakdown |
 | Manually auditing docs, CI, licenses | **22+ evidence-backed checks** across 12 categories — every finding cites its files |
 | Blank-page syndrome writing README/CONTRIBUTING/CI | **One-click starter docs & workflows** prefilled from verified facts, `[TODO]` where *you* must decide |
 | "Can I trust this tool with my code?" | **Local-first**: ZIPs never leave your browser; optional cloud connects are explicit and token-safe |
 
-> **Honest by design.** FORGEKIT never executes your code, never queries vulnerability databases, never claims legal compliance, and never disguises heuristics as certifications. What it can't verify, it says so.
+> **Honest by design.** ANVILPOINT never executes your code, never queries vulnerability databases, never claims legal compliance, and never disguises heuristics as certifications. What it can't verify, it says so.
 
 ---
 
@@ -62,7 +62,7 @@ Each finding carries severity, confidence, evidence paths, remediation, and its 
 Parses `package.json`, `requirements.txt`, `pyproject.toml`, `Cargo.toml`, `go.mod`. Version ranges are shown as ranges (never as installed versions); licenses are labeled `unknown — review` unless declared. No fake vulnerability claims, ever.
 
 ### ⚙️ CI Workflow Builder
-Reviewable GitHub Actions starters per ecosystem with pinned action versions, minimal `contents: read` permissions, and honest "verify each command" notes. Preview before you commit — FORGEKIT never commits anything.
+Reviewable GitHub Actions starters per ecosystem with pinned action versions, minimal `contents: read` permissions, and honest "verify each command" notes. Preview before you commit — ANVILPOINT never commits anything.
 
 ### ✅ Checklist, 📊 Reports, 🔎 Search
 Findings become prioritized tasks (user-marked vs. verified stays distinct). Export **JSON / Markdown / CSV**. Global search filters real findings, files, and dependencies — no hard-coded demo rows.
@@ -71,7 +71,7 @@ Findings become prioritized tasks (user-marked vs. verified stays distinct). Exp
 
 ## 🔌 Enterprise Integrations — GitHub & GitLab
 
-FORGEKIT is local-first, but real teams live on hosted platforms. The **Integrations** page offers optional live connections:
+ANVILPOINT is local-first, but real teams live on hosted platforms. The **Integrations** page offers optional live connections:
 
 - **GitHub** — enter `owner/repo` (or paste a URL). Default branch auto-detected via API; `codeload` archive download. Unauthenticated 60 req/hr shown live; add a PAT for private repos + higher limits.
 - **GitLab** — `namespace/project` or URL, any self-hosted host, `PRIVATE-TOKEN` supported.
@@ -100,12 +100,24 @@ REM → opens http://localhost:5173
 # Any OS:
 npm ci          # pinned, reproducible install
 npm run dev     # dev server → http://localhost:5173
-npm test        # 43 unit + integration tests
+npm test        # unit + integration tests
 npm run typecheck
 npm run build && npm run preview   # production build
 ```
 
 > Offline? After `npm ci`, everything except the *optional* Integrations page works with no network at all.
+
+## 🖥️ Desktop app (Windows)
+
+Prefer a real app over a browser tab? Every release ships both:
+
+- **`Anvilpoint-Setup-<version>.exe`** — NSIS installer (per-user, no admin needed)
+- **`Anvilpoint-Portable-<version>.exe`** — zero-install portable build
+
+Download from the [**Releases page**](https://github.com/shubhanand021-EXA/anvilpoint/releases),
+or build it yourself with `npm run dist:win`. The desktop shell is a sandboxed
+Electron wrapper around the same audited bundle — still local-first, still no telemetry.
+Details, SmartScreen notes, and security posture: [`docs/DESKTOP.md`](docs/DESKTOP.md).
 
 ---
 
@@ -157,7 +169,7 @@ Small, focused PRs. Core logic needs tests; no paid deps, no telemetry, no fake 
 
 ## 📄 License
 
-MIT © 2026 FORGEKIT contributors — see [`LICENSE`](LICENSE). Third-party attributions: [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+MIT © 2026 ANVILPOINT contributors — see [`LICENSE`](LICENSE). Third-party attributions: [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
 
 ---
 
@@ -165,6 +177,6 @@ MIT © 2026 FORGEKIT contributors — see [`LICENSE`](LICENSE). Third-party attr
 
 **Built in the open. Your code never leaves your machine.** 🔨
 
-⭐ Star this repo if FORGEKIT helped you ship a better README.
+⭐ Star this repo if ANVILPOINT helped you ship a better README.
 
 </div>

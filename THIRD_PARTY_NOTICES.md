@@ -1,6 +1,6 @@
 # Third-Party Notices
 
-FORGEKIT is MIT-licensed. The following runtime and build dependencies are bundled or required,
+ANVILPOINT is MIT-licensed. The following runtime and build dependencies are bundled or required,
 each verified as free and open-source under its stated license (checked against SPDX records,
 October 2026). Only MIT/ISC/Apache-2.0/BSD-licensed packages are used.
 
@@ -26,13 +26,15 @@ October 2026). Only MIT/ISC/Apache-2.0/BSD-licensed packages are used.
 | @testing-library/jest-dom | 6.6.3 | MIT | DOM assertions |
 | @vitejs/plugin-react | 4.3.4 | MIT | React fast refresh |
 | @playwright/test | 1.64.1 | MIT | E2E screenshot automation (`scripts/shots.cjs`, dev-only) |
+| electron | 45.0.0 | MIT | Desktop shell runtime (dev-only dep; not bundled source) |
+| electron-builder | 26.18.0 | MIT | Windows installer/portable packaging (dev-only) |
 | @types/node | 22.x | MIT | Node type definitions (build-time only) |
 | @types/react | 18.3.18 | MIT | React type definitions (build-time only) |
 | @types/react-dom | 18.3.5 | MIT | React DOM type definitions (build-time only) |
 
 ## Assets
 
-- `public/forgekit.svg` — original FORGEKIT mark, released under the project MIT license.
+- `public/ANVILPOINT.svg` — original ANVILPOINT mark, released under the project MIT license.
 - System font stack only; no webfont downloads, no icon fonts.
 
 ## Unresolved questions

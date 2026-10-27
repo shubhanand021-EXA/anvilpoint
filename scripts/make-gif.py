@@ -1,4 +1,4 @@
-"""Build docs/assets/forgekit-tour.gif from real Playwright screenshots."""
+"""Build docs/assets/ANVILPOINT-tour.gif from real Playwright screenshots."""
 from PIL import Image, ImageDraw, ImageFont
 import os
 
@@ -39,7 +39,7 @@ for name, caption in FRAMES:
     d.text((18, 11), caption, font=font, fill=(232, 234, 240))
     imgs.append(canvas)
 
-out = os.path.join(BASE, "forgekit-tour.gif")
+out = os.path.join(BASE, "anvilpoint-tour.gif")
 imgs[0].save(
     out, save_all=True, append_images=imgs[1:],
     duration=1600, loop=0, optimize=True,

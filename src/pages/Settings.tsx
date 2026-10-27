@@ -87,7 +87,7 @@ export function SettingsPage() {
         </div>
         <div className="card">
           <h2>Danger zone</h2>
-          <p className="muted">Delete all local FORGEKIT data (settings, checklist) and unload the project.</p>
+          <p className="muted">Delete all local ANVILPOINT data (settings, checklist) and unload the project.</p>
           {!confirm ? (
             <div style={{ display: 'flex', gap: 8 }}>
               <button className="btn" onClick={resetSettings}>Reset settings</button>

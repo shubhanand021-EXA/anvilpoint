@@ -59,7 +59,7 @@ export function DocsPage() {
     const blob = await zip.generateAsync({ type: 'blob' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
-    a.href = url; a.download = `${result?.inventory.projectName ?? 'forgekit'}-docs.zip`;
+    a.href = url; a.download = `${result?.inventory.projectName ?? 'ANVILPOINT'}-docs.zip`;
     document.body.appendChild(a); a.click(); a.remove();
     setTimeout(() => URL.revokeObjectURL(url), 5000);
     pushToast('Downloaded docs bundle (.zip)');

@@ -140,7 +140,7 @@ export function evaluateRules(ctx: RuleContext): Finding[] {
     testingFound ? (testConfig.length > 0 || hasTestScript ? 'found' : 'needs-review') : 'missing',
     testingFound
       ? `Test evidence: ${testingEvidence.concat(testFiles.slice(0, 2).map((f) => f.path)).join(', ') || 'test files present'}.`
-      : 'No test config, test script, or test files detected. FORGEKIT did not run anything; it only looked for entry points.',
+      : 'No test config, test script, or test files detected. ANVILPOINT did not run anything; it only looked for entry points.',
     'Without a repeatable test command, regressions go unnoticed.',
     testingFound ? testingEvidence.concat(testFiles.slice(0, 3).map((f) => f.path)) : ['(no test config/script/files)'],
     'test-entry-point', 'Add a test script/config and document the command.', 'Static presence check only — tests were not executed', 'medium', true, 7));
@@ -175,7 +175,7 @@ export function evaluateRules(ctx: RuleContext): Finding[] {
   const licenseFile = hasBasename(files, 'license') ?? hasBasename(files, 'license.md') ?? hasGlob(files, /^license(\.|$)/i)[0];
   out.push(mk('LIC-01', 'License file evidence', 'licensing', licenseFile ? 'info' : 'high',
     licenseFile ? 'found' : 'missing',
-    licenseFile ? `License file at ${licenseFile.path}. FORGEKIT does not verify its legal sufficiency.` : 'No LICENSE file detected; reuse and contribution terms are unclear.',
+    licenseFile ? `License file at ${licenseFile.path}. ANVILPOINT does not verify its legal sufficiency.` : 'No LICENSE file detected; reuse and contribution terms are unclear.',
     'A license file states how others may use the code.',
     licenseFile ? [licenseFile.path] : ['(no license file)'],
     'license-file', 'Add an OSI-approved license text (e.g. MIT) as LICENSE.', 'Filename scan only — not legal advice', 'high', true, 8));

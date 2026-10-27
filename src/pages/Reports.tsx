@@ -19,8 +19,8 @@ export function ReportsPage() {
 
   function exportNow() {
     if (!result) return;
-    if (fmt === 'json') downloadTextFile(`${result?.inventory.projectName}-forgekit.json`, reportAsJson(result), 'application/json');
-    else if (fmt === 'md') downloadTextFile(`${result?.inventory.projectName}-forgekit.md`, reportAsMarkdown(result), 'text/markdown');
+    if (fmt === 'json') downloadTextFile(`${result?.inventory.projectName}-ANVILPOINT.json`, reportAsJson(result), 'application/json');
+    else if (fmt === 'md') downloadTextFile(`${result?.inventory.projectName}-ANVILPOINT.md`, reportAsMarkdown(result), 'text/markdown');
     else downloadTextFile(`${result?.inventory.projectName}-findings.csv`, findingsAsCsv(result), 'text/csv');
     pushToast(`Exported ${fmt.toUpperCase()} report`);
   }

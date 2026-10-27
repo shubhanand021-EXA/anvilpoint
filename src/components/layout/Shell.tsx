@@ -31,8 +31,8 @@ export function Shell({ children }: { children: React.ReactNode }) {
     <div className="app-shell">
       <aside className="sidebar" aria-label="Primary">
         <div className="brand">
-          <img src="./forgekit.svg" alt="FORGEKIT logo" />
-          <div><b>FORGEKIT</b><small>Readiness Workbench</small></div>
+          <img src="./anvilpoint.svg" alt="ANVILPOINT logo" />
+          <div><b>ANVILPOINT</b><small>Readiness Workbench</small></div>
         </div>
         <nav aria-label="Sections">
           {NAV.map((n) => (

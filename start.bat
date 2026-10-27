@@ -1,10 +1,10 @@
 @echo off
 setlocal EnableDelayedExpansion
-REM FORGEKIT launcher — Windows 11. Local-first, no admin rights needed.
+REM ANVILPOINT launcher — Windows 11. Local-first, no admin rights needed.
 cd /d "%~dp0"
 
 echo ============================================
-echo  FORGEKIT - Open-Source Project Readiness Workbench
+echo  ANVILPOINT - Open-Source Project Readiness Workbench
 echo ============================================
 
 where node >nul 2>nul
@@ -26,7 +26,7 @@ if errorlevel 1 (
 )
 
 if not exist "package.json" (
-  echo [ERROR] package.json not found. Run start.bat from the FORGEKIT project folder.
+  echo [ERROR] package.json not found. Run start.bat from the ANVILPOINT project folder.
   pause
   exit /b 1
 )

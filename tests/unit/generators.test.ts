@@ -34,7 +34,7 @@ describe('generators and exports', () => {
   it('exports valid JSON/MD/CSV', () => {
     const r = sample();
     expect(() => JSON.parse(reportAsJson(r))).not.toThrow();
-    expect(reportAsMarkdown(r)).toMatch(/# FORGEKIT/);
+    expect(reportAsMarkdown(r)).toMatch(/# ANVILPOINT/);
     const csv = findingsAsCsv(r);
     expect(csv.split('\n')[0]).toMatch(/id,title,category/);
   });

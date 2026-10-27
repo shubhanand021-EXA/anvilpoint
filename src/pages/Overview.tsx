@@ -15,7 +15,7 @@ export function OverviewPage() {
         <EmptyState title="No project imported" body="Import a ZIP archive of a repository to get an inventory, evidence-backed findings, and generated starter files. Everything runs locally." />
         <div className="grid two-eq" style={{ marginTop: 14 }}>
           {[
-            ['1 · Import locally', 'Drag & drop a ZIP. FORGEKIT validates paths, enforces size budgets, and never executes project code.'],
+            ['1 · Import locally', 'Drag & drop a ZIP. ANVILPOINT validates paths, enforces size budgets, and never executes project code.'],
             ['2 · Review evidence', 'Every finding cites the files (or absence) that triggered it, with severity, confidence, and remediation.'],
             ['3 · Generate & export', 'Starter README, CONTRIBUTING, CI workflows, and reports download as files you own. Nothing auto-commits.'],
           ].map(([t, b]) => (
